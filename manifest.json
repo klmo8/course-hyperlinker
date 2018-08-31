@@ -1,0 +1,29 @@
+{
+  "name": "SFU CMPT Course Hyperlinker",
+  "version": "1.0",
+  "description": "Highlights and hyperlinks any paragraph text that matches the 'CMPT XXX' format. The inserted link redirects to the course description for the current academic term",
+  "icons": {
+    "16": "images/get_started16.png",
+    "32": "images/get_started32.png",
+    "48": "images/get_started48.png",
+    "128": "images/get_started128.png"
+  },
+  "background": {
+   "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "js": ["contentscript.js"],
+      "run_at": "document_idle",
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "permissions": [
+    "webNavigation",
+    "tabs",
+    "http://*/",
+    "https://*/"
+  ],
+  "web_accessible_resources": ["searchandlink.js"],
+  "manifest_version": 2
+}

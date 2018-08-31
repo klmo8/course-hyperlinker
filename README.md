@@ -3,6 +3,8 @@ A simple Google Chrome extension that highlights and hyperlinks any paragraph te
 
 This project was undertaken as a means of familiarizing myself with JavaScript and DOM traversal. I learned a lot!
 
+A future version may include support for courses in other departments at SFU, and a feature that displays the course title when the user hovers their mouse over the course number.
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.

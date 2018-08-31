@@ -1,5 +1,7 @@
 # CMPT-hyperlinker
-Google Chrome extension that highlights and hyperlinks any paragraph text that matches the 'CMPT XXX' format. The inserted link redirects to the course description for the current academic term.
+A simple Google Chrome extension that highlights and hyperlinks any paragraph text that matches the 'CMPT XXX' format. The inserted link redirects to the course description for the current academic term.
+
+This project was undertaken as a means of familiarizing myself with JavaScript and DOM traversal. I learned a lot!
 
 ## Getting Started
 

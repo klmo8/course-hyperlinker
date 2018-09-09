@@ -22,7 +22,8 @@ To install:
 2) Navigate to chrome://extensions
 3) Enable developer mode (top-right)
 4) Select the "LOAD UNPACKED" option (top-left)
-5) The extension will be added; ensure that the toggle switch is in the "on" position
+5) Specify the location of the downloaded repository
+6) The extension will be added; ensure that the toggle switch is in the "on" position
 
 ## Built With
 

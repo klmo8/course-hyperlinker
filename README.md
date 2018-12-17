@@ -5,6 +5,13 @@ This project helped me learn about JavaScript and DOM traversal.
 
 A future version may include support for courses in other departments at SFU, and a feature that displays the course title when the user hovers their mouse over the course number. I would also like to add an "Options" page where the user can change the colour (or turn off) the highlighting for the hyperlinked text.
 
+# Demo
+With Course Hyperlinker Activated:
+<img width="1014" alt="screen shot 2018-12-17 at 1 23 21 pm" src="https://user-images.githubusercontent.com/18518784/50116972-93891180-0200-11e9-9a37-c7fece6300f2.png">
+
+Without Course Hyperlinker Activated:
+<img width="821" alt="screen shot 2018-12-17 at 1 30 31 pm" src="https://user-images.githubusercontent.com/18518784/50116976-9552d500-0200-11e9-950a-7a9aa748263a.png">
+
 ## Getting Started
 
 After following installation steps (below), proceed to one of the following URLs to see the extension in action:

@@ -1,11 +1,10 @@
 # CMPT-hyperlinker
-A Google Chrome extension that highlights and hyperlinks any paragraph text that matches the 'CMPT XXX' format. The inserted link redirects to the course description for the current academic term on the SFU CS website.
+A Google Chrome extension that highlights and hyperlinks any paragraph text that matches the 'CMPT XXX' format. The inserted link redirects to the course description for the current academic term on the SFU CS website. Hovering over the course text also displays a tooltip showing the title of the course (ie: "Data Structures and Algorithms").
 
 This project helped me learn about JavaScript and DOM traversal.
 
-A future version may include support for courses in other departments at SFU, and a feature that displays the course title when the user hovers their mouse over the course number. I would also like to add an "Options" page where the user can change the colour (or turn off) the highlighting for the hyperlinked text.
+A future version may include support for courses in other departments at SFU, and a feature that displays the course title when the user hovers their mouse over the course number. I would also like to add an "Options" page where the user can change the colour (or turn off) the highlighting for the hyperlinked text. The method of matching text in the DOM to courses in the catalogue is quite inefficient, so I will be considering performance improvements as well.
 
-# Demo
 With Course Hyperlinker Activated:
 <img width="1014" alt="screen shot 2018-12-17 at 1 23 21 pm" src="https://user-images.githubusercontent.com/18518784/50116972-93891180-0200-11e9-9a37-c7fece6300f2.png">
 

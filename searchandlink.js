@@ -8,17 +8,16 @@ function processResponse(urlExtension) {
   const fullUrl = baseUrl + urlExtension;
   const courses = [];
   const response = fetch(fullUrl).then(resp => resp.json()
-    .then(data => { data.map(entry => courses.push(`${entry.value}`));
+    .then(data => { data.map(entry => courses.push({"code": `${entry.value}`, "title": `${entry.title}`}));
       var docText = document.querySelectorAll('p');
       doctText = Array.from(docText);
       const currDate = getDate();
       const destLink = `https://www.sfu.ca/students/calendar/${currDate[0]}/${currDate[1]}/courses/cmpt`
       // Convdrsion of array to object adapted from: https://stackoverflow.com/questions/42974735/create-object-from-array
       const courseObj = courses.reduce((acc, el) => {
-        // TODO: get regex working for object key to simplify this to a single line.
-        acc[`cmpt ${el}`] = `<a href="${destLink}/${el}.html"><mark>CMPT ${el}</mark></a>`;
-        acc[`Cmpt ${el}`] = `<a href="${destLink}/${el}.html"><mark>CMPT ${el}</mark></a>`;
-        acc[`CMPT ${el}`] = `<a href="${destLink}/${el}.html"><mark>CMPT ${el}</mark></a>`;
+        acc[`cmpt ${el['code']}`] = `<a href="${destLink}/${el['code']}.html" title="${el['title']}"><mark>cmpt ${el['code']}</mark></a>`;
+        acc[`Cmpt ${el['code']}`] = `<a href="${destLink}/${el['code']}.html" title="${el['title']}"><mark>Cmpt ${el['code']}</mark></a>`;
+        acc[`CMPT ${el['code']}`] = `<a href="${destLink}/${el['code']}.html" title="${el['title']}"><mark>CMPT ${el['code']}</mark></a>`;
         return acc;
       }, {});
       // Adapted array to regexp conversion from: https://stackoverflow.com/questions/28280920/convert-array-of-words-strings-to-regex-and-use-it-to-get-matches-on-a-string
@@ -26,8 +25,7 @@ function processResponse(urlExtension) {
       docText.forEach(ptag => {
         courses.forEach(course => {
           const text = ptag.textContent.toUpperCase();
-          if (text.includes(course.toUpperCase())) {
-            // const courseData = getCourseData(course);
+          if (text.includes(course['code'].toUpperCase())) {
             var elements = document.querySelectorAll('p, li, em');
             elements = Array.from(elements);
             updateValidElements(elements, course, coursesRegex, courseObj);

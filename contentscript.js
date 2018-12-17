@@ -12,20 +12,3 @@ if (document.body.innerHTML.search(fullSFU) != -1 || document.body.innerHTML.sea
   };
   (document.head || document.documentElement).appendChild(s);
 }
-
-// DEBUGGING stuff..
-// var target = document.querySelector('body');
-// var observer = new MutationObserver(function(mutations) {
-//   mutations.forEach(function(mutation) {
-//     (document.head || document.documentElement).appendChild(s);
-//   });
-// });
-// var config = {
-//   childList: true,
-//   attributes: true,
-//   // characterData: true,
-//   // subtree: true,
-//   // attributeOldValue: true,
-//   // characterDataOldValue: true
-// };
-// observer.observe(target, config);

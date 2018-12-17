@@ -1,5 +1,5 @@
 # CMPT-hyperlinker
-A Google Chrome extension that highlights and hyperlinks any paragraph text that matches the 'CMPT XXX' format. The inserted link redirects to the course description for the current academic term on the SFU CS website. Hovering over the course text also displays a tooltip showing the title of the course (ie: "Data Structures and Algorithms").
+A Google Chrome extension that highlights and hyperlinks any paragraph text that matches the 'CMPT XXX' format. The inserted link redirects to the course description for the current academic term on the SFU CS website. Hovering over the course code also displays a tooltip showing the title of the course (ie: "Data Structures and Algorithms").
 
 This project helped me learn about JavaScript and DOM traversal.
 

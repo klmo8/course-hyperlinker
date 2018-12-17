@@ -15,7 +15,8 @@
     {
       "js": ["contentscript.js"],
       "run_at": "document_idle",
-      "matches": ["<all_urls>"]
+      "matches": ["<all_urls>"],
+      "exclude_globs": ["chrome://extensions"]
     }
   ],
   "permissions": [

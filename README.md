@@ -5,7 +5,7 @@ This project helped me learn about JavaScript and DOM traversal.
 
 A future version may include support for courses in other departments at SFU, and performance improvements. I would also like to add an "Options" page where the user can change the colour (or turn off) the highlighting for the hyperlinked text.
 
-Please note that if you wish to use this extension for other departments at SFU, the code can be easily modified to support this. Implementing support for all departments out-of-the-box would result in performance issues.
+Please note that if you wish to use this extension for other departments at SFU, the code can be easily modified to support this.
 
 With Course Hyperlinker Activated:
 <img width="1014" alt="screen shot 2018-12-17 at 1 23 21 pm" src="https://user-images.githubusercontent.com/18518784/50116972-93891180-0200-11e9-9a37-c7fece6300f2.png">

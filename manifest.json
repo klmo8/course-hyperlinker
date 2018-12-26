@@ -16,7 +16,10 @@
       "js": ["contentscript.js"],
       "run_at": "document_end",
       "matches": ["<all_urls>"],
-      "exclude_globs": ["chrome://extensions*"]
+      "exclude_matches": [
+        "*://*.github.com/*", 
+        "*://*.facebook.com/*"
+      ]
     }
   ],
   "permissions": [

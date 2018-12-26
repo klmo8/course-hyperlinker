@@ -17,6 +17,11 @@ After following installation steps (below), proceed to one of the following URLs
 * https://www.reddit.com/r/simonfraser/comments/9c4exg/cmpt_courses_with_no_finals/
 * http://www.sfu.ca/computing/current-students/undergraduate-students/programs/computing-science-major.html
 
+### Notes
+* If using the extension on Reddit or Facebook, you may notice that the script will occasionally appear to stop working. If so, simply reload the current page and the script will be reactivated. This is an issue I am looking to fix.
+
+* The script can easily be modified to support any other department at SFU.
+
 ### Prerequisites
 
 Google Chrome web browser

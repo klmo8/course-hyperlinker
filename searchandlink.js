@@ -15,6 +15,7 @@ function processResponse(urlExtension) {
       const destLink = `https://www.sfu.ca/students/calendar/${currDate[0]}/${currDate[1]}/courses/cmpt`
       // Convdrsion of array to object adapted from: https://stackoverflow.com/questions/42974735/create-object-from-array
       const courseObj = courses.reduce((acc, el) => {
+        // Handling for different capitalization patterns of course codes
         acc[`cmpt ${el['code']}`] = `<a href="${destLink}/${el['code']}.html" title="${el['title']}"><mark>cmpt ${el['code']}</mark></a>`;
         acc[`Cmpt ${el['code']}`] = `<a href="${destLink}/${el['code']}.html" title="${el['title']}"><mark>Cmpt ${el['code']}</mark></a>`;
         acc[`CMPT ${el['code']}`] = `<a href="${destLink}/${el['code']}.html" title="${el['title']}"><mark>CMPT ${el['code']}</mark></a>`;

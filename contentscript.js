@@ -1,13 +1,33 @@
-var fullSFU = new RegExp("Simon Fraser University",'i');
-var acronymSFU = new RegExp("SFU",'i');
-
-// Added conditional to improve efficiency and prevent false positives (ie: references to CMPT XXX in non-SFU context)
-if (document.body.innerHTML.search(fullSFU) != -1 || document.body.innerHTML.search(acronymSFU) != -1) {
-  // Adapted from: https://stackoverflow.com/questions/9515704/insert-code-into-the-page-context-using-a-content-script
+function injectScript() {
   var s = document.createElement('script');
   s.src = chrome.extension.getURL('searchandlink.js');
   s.onload = function() {
-      this.remove();
+    this.remove();
   };
   (document.head || document.documentElement).appendChild(s);
 }
+
+function isMyScriptLoaded() {
+  url = chrome.extension.getURL('searchandlink.js');
+  var scripts = document.getElementsByTagName('script');
+  for (var i = scripts.length; i--;) {
+      if (scripts[i].src == url) {
+        return true;
+      }
+  }
+  return false;
+}
+
+var observer = new MutationObserver(function(mutations) {
+
+  mutations.forEach(function(mutation) {
+    if (mutation.addedNodes.length > 0) {
+      if (!isMyScriptLoaded()){
+        injectScript();
+      };
+    }
+  })
+});
+injectScript()
+var targetNode = document.querySelector('body');
+observer.observe(targetNode, {attributes: false, childList: true, subtree: true});

@@ -14,7 +14,7 @@
   "content_scripts": [
     {
       "js": ["contentscript.js"],
-      "run_at": "document_idle",
+      "run_at": "document_end",
       "matches": ["<all_urls>"],
       "exclude_globs": ["chrome://extensions*"]
     }

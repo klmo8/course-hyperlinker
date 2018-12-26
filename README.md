@@ -18,9 +18,10 @@ After following installation steps (below), proceed to one of the following URLs
 * http://www.sfu.ca/computing/current-students/undergraduate-students/programs/computing-science-major.html
 
 ### Notes
-* If using the extension on Reddit or Facebook, you may notice that the script will occasionally appear to stop working. If so, simply reload the current page and the script will be reactivated. This is an issue I am looking to fix.
 
 * The script can easily be modified to support any other department at SFU.
+* Extension may cause script to lag if used on Reddit
+* Extension will not work on Facebook, as Facebook blocks attempts to inject scripts via its CSP
 
 ### Prerequisites
 

@@ -29,6 +29,7 @@ var observer = new MutationObserver(function(mutations) {
     }
   })
 });
+
 injectScript()
 var targetNode = document.querySelector('body');
 observer.observe(targetNode, {attributes: false, childList: true, subtree: true});

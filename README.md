@@ -19,9 +19,9 @@ After following installation steps (below), proceed to one of the following URLs
 
 ### Notes
 
-* The script can easily be modified to support any other department at SFU.
-* Extension may cause script to lag if used on Reddit
-* Extension will not work on Facebook, as Facebook blocks attempts to inject scripts via its CSP
+* The script can easily be modified to support any other department at SFU
+* May cause minor browser lagging if used on Reddit
+* Facebook is _not_ supported, as Facebook blocks attempts to inject scripts via its CSP
 
 ### Prerequisites
 

@@ -23,13 +23,15 @@ function isMyScriptLoaded() {
 var observer = new MutationObserver(function(mutations) {
   mutations.forEach(function(mutation) {
     if (mutation.addedNodes.length > 0) {
-      if (!isMyScriptLoaded()){
-        injectScript();
-      };
+      if (mutation.addedNodes[0].tagName === "DIV") {
+        if (!isMyScriptLoaded()){
+          injectScript();
+        };
+      }
     }
   })
 });
 
 injectScript()
 var targetNode = document.querySelector('body');
-observer.observe(targetNode, {attributes: false, childList: true, subtree: true});
+observer.observe(targetNode, {childList: true, subtree: true});

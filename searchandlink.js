@@ -54,9 +54,9 @@ function updateValidElements(elements, course, coursesRegex, courseObj) {
 function getDate() {
   const today = new Date();
   const year = today.getFullYear();
-  const spring = [11,0,1,2]
-  const summer = [3,4,5,6]
-  const fall = [7,8,9,10]
+  const spring = [0,1,2,3];
+  const summer = [4,5,6,7];
+  const fall = [8,9,10,11];
   var month = today.getMonth();
   if (spring.includes(month)) {
     month = "spring";

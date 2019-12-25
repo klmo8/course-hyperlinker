@@ -49,3 +49,6 @@ This project is licensed under the MIT License
 ## Acknowledgments
 
 * Thanks to helpful posts on StackOverflow
+
+## TODO 
+* add support for courses in other departments (ie: MATH, PSYC, etc)

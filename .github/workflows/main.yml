@@ -13,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - name: install writegood
+      run: npm install -g write-good
     - name: run writegood
       # Recursively find all .md files and run the write-good linter on them
       run: find . -name '*.md' | xargs write-good

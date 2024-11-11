@@ -5,9 +5,6 @@ This project helped me learn about JavaScript and DOM traversal.
 
 A future version may include support for courses in other departments at SFU, and performance improvements. I would also like to add an "Options" page where the user can change the colour (or turn off) the highlighting for the hyperlinked text.
 
-### Demo Video
-https://youtu.be/MgG9ssOldZI
-
 ## Getting Started
 
 After following installation steps (below), proceed to one of the following URLs to see the extension in action:
